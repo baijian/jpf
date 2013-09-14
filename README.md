@@ -29,7 +29,9 @@ Install composer:
 
 ### Guide
 
-$ cd jpf
+    $ git clone git@github.com:baijian/jpf
 
-$ script/bootstrap
+    $ cd jpf
+
+    $ script/bootstrap
 
