@@ -29,4 +29,7 @@ $ mv $HOME/composer.phar $HOME/composer
 
 ### Guide
 
+$ cd jpf
+
+$ script/bootstrap
 
