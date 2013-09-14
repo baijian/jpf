@@ -1,0 +1,5 @@
+#!/bin/bash
+BasePath=$(cd `dirname $0`; pwd)
+ProjectDir=$BasePath'/../'
+cd $ProjectDir
+exec composer install
