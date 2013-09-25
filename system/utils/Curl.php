@@ -1,9 +1,5 @@
 <?php
-/**
- * @author baijian
- * @version 1.0
- */
-class Curl {
+class Utils_Curl {
 
     private $ch = null;				
     private $status_code = null;

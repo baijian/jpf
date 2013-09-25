@@ -1,5 +1,5 @@
 <?php
-class JPF_Memcache {
+class Cache_Memcache {
 
     private $virtual_nodes = 32;
     private $server_count;
