@@ -1,12 +1,12 @@
 <?php
-$dsn = 'mysql:dbname=oauth2_db;host=localhost';
+$dsn = 'mysql:dbname=oauth;host=localhost';
 $username = 'oauth';
 $password = 'oauth';
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-require('vendor/autoload.php');
+require('../vendor/autoload.php');
 OAuth2\AutoLoader::register();
 
 $storage = new OAuth2\Storage\Pdo(array('dsn'=>$dsn, 'username'=>$username, 
