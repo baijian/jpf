@@ -1,8 +1,4 @@
 <?php
-/**
- * @author baijian
- * @version 1.0
- */
 require_once("Curl.php");
 class Log {
     
