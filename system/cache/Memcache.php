@@ -7,7 +7,7 @@ class Cache_Memcache {
     private $node_server = array();
     private $node_server_sorted = false;
 
-    public function __construct($v_nodes = null){
+    public function __construct($v_nodes = null) {
         if(!empty($v_nodes)) {
             $this->virtual_nodes = $v_nodes;
         }

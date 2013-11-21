@@ -113,7 +113,11 @@ class Utils_Curl {
             curl_setopt($this->ch, CURLOPT_HTTPHEADER, $headers);
         }
         if ($params != null) {
-            curl_setopt($this->ch, CURLOPT_POSTFIELDS, http_build_query($params));
+            if (is_array($params) && !empty($params)) {
+                curl_setopt($this->ch, CURLOPT_POSTFIELDS, http_build_query($params));
+            else {
+                curl_setopt($this->ch, CURLOPT_POSTFIELDS, $params);
+            }
         }
         $result = curl_exec($this->ch);
         $header_size = curl_getinfo($this->ch, CURLINFO_HEADER_SIZE);
