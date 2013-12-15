@@ -21,7 +21,7 @@ class Utils_Curl {
         function_exists('curl_init') || die('CURL Library Not Loaded');	
         $this->setopt = array_merge($this->setopt,$setopt);		
         $this->ch = curl_init();
-        curl_setopt_array($ch, $this->setopt);
+        curl_setopt_array($this->ch, $this->setopt);
     }
 
     /**
@@ -115,7 +115,7 @@ class Utils_Curl {
         if ($params != null) {
             if (is_array($params) && !empty($params)) {
                 curl_setopt($this->ch, CURLOPT_POSTFIELDS, http_build_query($params));
-            else {
+            }else {
                 curl_setopt($this->ch, CURLOPT_POSTFIELDS, $params);
             }
         }
