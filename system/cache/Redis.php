@@ -1,5 +1,5 @@
 <?php
-class Utils_Redis {
+class Cache_Redis {
 
     private $redis = null;
     private $host = 'localhost';//default localhost
